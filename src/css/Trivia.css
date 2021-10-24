@@ -1,0 +1,179 @@
+header {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  border-radius: 50%;
+  margin-left: 50px;
+  padding: 3px;
+}
+
+header h2 {
+  margin-top: 25px;
+}
+
+.score {
+  margin-right: 150px;
+}
+
+.question-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.question-category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.question-text {
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.question-answer-container button {
+  margin: 5px;
+}
+
+.countdown {
+  background-color: rgb(138, 173, 214);
+  border: 2px solid darkslategrey;
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 200px;
+  width: 40px;
+}
+
+.next-btn {
+  background-color: cadetblue;
+}
+
+.next-btn:hover {
+  background-color: rgb(65, 153, 156);
+}
+
+.ranking-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.div-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.ranking {
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0;
+  width: 60%;
+}
+
+.each-player {
+  align-items: center;
+  background: linear-gradient(45deg, cornflowerblue, white);
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.each-player:hover {
+  transform: scale(1.02);
+}
+
+.each-player img {
+  border-radius: 50%;
+  height: 100%;
+  width: 80px;
+}
+
+.plName {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.player-score {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 40px;
+  margin-top: 10px;
+  width: 40px;
+}
+
+.clear-btn, .home-btn {
+  width: 150px;
+}
+
+.home-btn {
+  margin: 20px;
+}
+
+@media only screen and ( max-width : 780px ) {
+
+  .div-wrapper {
+    margin-top: 10%;
+  }
+
+  .plName, .score {
+    font-size: 16px;
+  }
+
+  .plName {
+    margin-top: 10px;
+  }
+
+  .each-player img {
+    width: 55px;
+  }
+}
+
+
+@media only screen and ( max-width : 460px ) {
+
+  .div-wrapper {
+    margin-top: 15%;
+  }
+
+  .plName, .score {
+    font-size: 14px;
+  }
+
+  .plName {
+    margin-top: 10px;
+  }
+
+  .each-player img {
+    width: 45px;
+  }
+
+  .ranking-title {
+    font-size: 40px;
+  }
+
+  .buttons-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .clear-btn, .home-btn {
+    height: 34px;
+    margin: 2px 0;
+    width: 130px;
+  }
+}
